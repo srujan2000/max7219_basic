@@ -186,6 +186,6 @@ Inside the while loop, we are sending the data using array to all the four dot m
 </section>
 
 <section>
-<strong>For complete code click <a href="">here</a></strong>
+<strong>For complete code click <a href="https://github.com/srujan2000/max7219_basic/blob/main/main.ino">here</a></strong>
 </section>
 </body>
