@@ -270,9 +270,9 @@ In this we will learn how to display characters (aplhabhets,numbers or any other
 <h2>Contents</h2>
 <ul style="background-color:#c5d4cc;padding-top: 10px;padding-bottom: 10px;">
 <li><a href="#comp"><h3>Components</h3></a></li>
-<li><a href="#ckt"><h3>Connections</h3></a></li>
-<li><a href="#pwm"><h3>About MAX7219 IC</h3></a></li>
-<li><a href="#servo"><h3>Working with Max7219 Dot Matrix</h3></a></li>
+<li><a href="#connec"><h3>Connections</h3></a></li>
+<li><a href="#max"><h3>About MAX7219 IC</h3></a></li>
+<li><a href="#dot"><h3>Working with Max7219 Dot Matrix</h3></a></li>
 
 </ul>
 </section>
@@ -322,7 +322,7 @@ Decode mode is useful when using with 7-segment display, here we are using dot m
 <p>For more info on Max7219, you can read datasheet from <a href="https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf">here</a></p>
 </strong>
 </section>
-<section id="work">
+<section id="dot">
 <h2>Working with Dot Matrix</h2><h2>
 <strong style="font-size:20px">
 Max7219 contains a 16-bit serial data register , that data will be sent through Din , each time data is sent clock should be high so that data is shifted into max7219 chip and to store the data in the register, Chip select pin pulled from high to low. <br><br>
