@@ -185,7 +185,3 @@ Inside the while loop, we are sending the data using array to all the four dot m
 </strong>
 </section>
 
-<section>
-<strong>For complete code click <a href="">here</a></strong>
-</section>
-</body>
