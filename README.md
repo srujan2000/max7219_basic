@@ -81,7 +81,7 @@ Max7219 contains a 16-bit serial data register , that data will be sent through 
 let us understand the code
 
 
-<code>
+```
 void enable()
 {
 
@@ -90,20 +90,22 @@ void enable()
   out_clk(0x00);
   delay1();
 }
-</code>
+```
+  
 This function is used to pull clock to high to low with certain delay, this function is called ,each time data is transmitted through Din.
 
-<code>
+```
 void cs_high_low(){
 
   out_cs(0x01);
   delay1();
   out_cs(0x00);
 }
-</code>
+```
+  
 This function is used to pull chip select pin from high to low, this function is called when we want data to be stored in register.
 
-<code>
+```
 void send_Din(char addr,unsigned char data)
     {
 
@@ -117,10 +119,11 @@ void send_Din(char addr,unsigned char data)
       enable();
     } 
     }
-</code>
+```
 This function is used to send the 16-bit serial data bit by bit to the Din,address is sent to the register ,followed by the data each time a bit is sent enable function is called to pull the clock high to low.<br>
 
-<code>#define shut_down   0x0C
+```
+#define shut_down   0x0C
 #define brightness  0x0A
 #define scan_limit  0x0B
 #define decode_mode 0x09
@@ -129,13 +132,14 @@ char led_data1[8] = {0xFE,0x80,0x80,0xFE,0x80,0x80,0x80,0xFE};//'E'
 char led_data2[8] = {0xFE,0x80,0x80,0x80,0x80,0x80,0x80,0xFE};//'C'
 char led_data3[8] = {0xFE,0x80,0x80,0xFE,0x80,0x80,0x80,0xFE};//'E' 
 char led_data4[8] = {0x81,0xC1,0xA1,0x91,0x89,0x85,0x83,0x81};//'N'
-</code>
+```
 
 We defined the address of shutdown mode,Intensity,scanlimit,decode mode.
 
 Using char array we defined the symbols we want to send in the form of Hex.
 
-<code>void setup() 
+```
+void setup() 
 {
 
   init();
@@ -176,7 +180,7 @@ Using char array we defined the symbols we want to send in the form of Hex.
   }
 
 }
-</code>
+```
 
 In main we set the scan limit,decode mode, brightness, shutdown mode.
 
